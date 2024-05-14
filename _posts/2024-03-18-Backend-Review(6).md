@@ -5,6 +5,7 @@ author: JEONGSUJONG
 date: 2024-03-18 00:00:00 +0800
 toc: true
 pin: false
+published: false
 categories: [backend, Node.js]
 tags: [aws]
 image: https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/63a46f26-e1ae-489a-a5ce-154f4d4aa987
