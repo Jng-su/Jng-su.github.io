@@ -93,7 +93,7 @@ theme_mode: dark
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-cdn: "https://chirpy-img.netlify.app"
+# cdn: "https://chirpy-img.netlify.app"
 
 # the avatar on sidebar, support local or CORS resources
 avatar: "https://github.com/JEONGSUJONG/JEONGSUJONG/assets/168960634/cc9b486f-4271-4c69-93d5-ccaeedb6ff32"
