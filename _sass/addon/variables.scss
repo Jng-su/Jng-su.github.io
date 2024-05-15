@@ -2,6 +2,14 @@
  * The SCSS variables
  */
 
+@font-face {
+  font-family: NanumSquareNeo-Variable;
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2')
+    format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* sidebar */
 
 $sidebar-width: 260px !default; /* the basic width */
@@ -31,3 +39,4 @@ $code-icon-width: 1.75rem !default;
 
 $font-family-base: 'Source Sans Pro', 'Microsoft Yahei', sans-serif !default;
 $font-family-heading: Lato, 'Microsoft Yahei', sans-serif !default;
+$font-family-title: 'NanumSquareNeo-Variable';
