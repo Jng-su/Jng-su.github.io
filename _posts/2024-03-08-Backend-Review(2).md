@@ -25,13 +25,13 @@ tags: [express]
 - Client 와 Server는 어떤 방식으로 소통을 할까? ( request -> response )
 - 바로 <U>HTTP Protocol</U> 방식으로 소통을 하게 된다. ( Ex. https://www.youtube.com )
 
-![HTTP-Protocol](https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/291661a6-f263-4bce-a0a4-3f02c76cfaac)
+<!-- ![HTTP-Protocol](https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/291661a6-f263-4bce-a0a4-3f02c76cfaac) -->
 
 - HTTP Request 요청이 Client로 부터 오면 서버는 <U>OPEN</U> 되고 HTTP Response 응답을 Server가 보내주면 Server는 다시 <U>CLOSE</U> 하게 된다.
 
 <br>
 
-![httpstructure](https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/85377395-0d7e-4779-977a-75ff63179020)
+<!-- ![httpstructure](https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/85377395-0d7e-4779-977a-75ff63179020) -->
 
 - `start line`
   - HTTP request Message의 시작 라인 ( HTTP method , Request target , HTTP version )
