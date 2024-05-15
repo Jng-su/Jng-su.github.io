@@ -5,24 +5,24 @@ author: JEONGSUJONG
 date: 2024-03-08 00:03:00 +0800
 toc: true
 pin: false
-published: false
+published: true
 categories: [backend, Node.js]
 tags: [router]
-image: https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/63a46f26-e1ae-489a-a5ce-154f4d4aa987
+# image: https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/63a46f26-e1ae-489a-a5ce-154f4d4aa987
 ---
 
 <br>
 
 > ## Router
 
-![image](https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/e582602c-6493-495c-8d08-25049af15d17)
+<!-- ![image](https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/e582602c-6493-495c-8d08-25049af15d17) -->
 
 - Express 애플리케이션에서는 클라이언트의 요청을 처리하기 위해 여러 개의 엔드포인트를 설정하고 관리해야한다.
 - 이때 각 엔드포인트 별로 요청을 처리하는 핸들러를 작성하고 이를 ROUTER에 등록하여 관리한다.
 - ROUTER는 특정 엔드포인트에 대한 요청을 처리하기 위한 미들웨어 집합이며 ROUTER를 통해 애플리케이션의 코드를 구조화하고 가독성을 높일 수 있다.
 - 앞선 실습에선 ROUTER를 사용하지 않았기에 가독성이 떨어졌다. 이를 개선하기 위해 라우터를 사용해야한다.
 
-![image](https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/b44f4728-949e-4470-b4ef-82ff1016e78a)
+<!-- ![image](https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/b44f4728-949e-4470-b4ef-82ff1016e78a) -->
 
 ```javascript
 const UserRouter = Router();

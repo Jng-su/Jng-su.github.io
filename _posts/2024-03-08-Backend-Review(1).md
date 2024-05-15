@@ -5,10 +5,10 @@ author: JEONGSUJONG
 date: 2024-03-08 00:00:00 +0800
 toc: true
 pin: false
-published: false
+published: true
 categories: [backend, Node.js]
 tags: [node.js]
-image: https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/63a46f26-e1ae-489a-a5ce-154f4d4aa987
+# image: https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/63a46f26-e1ae-489a-a5ce-154f4d4aa987
 ---
 
 <br>
@@ -26,7 +26,7 @@ image: https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/63a46f26-
 - 이미 구현된 많은 패키지들을 가져와서 사용하므로 프로젝트의 개발 속도를 높인다.
 - 코드의 재사용성, 의존성 관리 등 간편하게 사용할 수 있다.
 
-![image](https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/fc7cae30-44b7-4f29-8e24-37877184e644)
+<!-- ![image](https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/fc7cae30-44b7-4f29-8e24-37877184e644) -->
 
 <br>
 
@@ -62,7 +62,7 @@ image: https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/63a46f26-
 
 ### package.json
 
-![image](https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/0105ce84-78b2-4a74-a677-bd6922f6afec)
+<!-- ![image](https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/0105ce84-78b2-4a74-a677-bd6922f6afec) -->
 
 - `node_modules` : 다른 개발자들이 원격 저장소에 올려둔 패키지들을 내려받아 저장하는 폴더 📁
 - `package.json` : Node.js 프로젝트의 구성 및 의존성을 정의하는 파일

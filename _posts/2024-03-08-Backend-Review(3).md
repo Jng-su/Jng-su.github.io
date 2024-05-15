@@ -5,10 +5,10 @@ author: JEONGSUJONG
 date: 2024-03-08 00:02:00 +0800
 toc: true
 pin: false
-published: false
+published: true
 categories: [backend, Node.js]
 tags: [restapi]
-image: https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/63a46f26-e1ae-489a-a5ce-154f4d4aa987
+# image: https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/63a46f26-e1ae-489a-a5ce-154f4d4aa987
 ---
 
 <br>

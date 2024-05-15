@@ -5,10 +5,10 @@ author: JEONGSUJONG
 date: 2024-03-09 00:00:00 +0800
 toc: true
 pin: false
-published: false
+published: true
 categories: [backend, Node.js]
 tags: [swagger]
-image: https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/63a46f26-e1ae-489a-a5ce-154f4d4aa987
+# image: https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/63a46f26-e1ae-489a-a5ce-154f4d4aa987
 ---
 
 <br>
@@ -21,7 +21,7 @@ image: https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/63a46f26-
 
 <br>
 
-![image](https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/e97c6b45-7993-42e5-8795-b4d45d3141f4)
+<!-- ![image](https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/e97c6b45-7993-42e5-8795-b4d45d3141f4) -->
 
 - Swagger는 모든 문서를 json 형식으로 작성해야하고 각 엔드포인트에 대한 요청과 응답에 대한 정보를 **세부적으로** 기술해야한다.
 - 즉, Swagger는 API 문서를 시각적으로 보여주므로 개발자들이 요청과 응답의 구조를 이해하기 쉽고 실수를 방지할 수 있다.
@@ -44,7 +44,7 @@ image: https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/63a46f26-
 }
 ```
 
-![image](https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/24e964f2-56ac-4e9d-8ad1-ea1d03881dc1)
+<!-- ![image](https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/24e964f2-56ac-4e9d-8ad1-ea1d03881dc1) -->
 
 - `version` : package.json에서의 version과 동일해야함
 - `servers` : Server url으로 Deploy시 여러 개의 url이 생길 수 있으므로 배열로 작성
@@ -195,7 +195,7 @@ image: https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/63a46f26-
   // 3) swagger에 등록하는 방법
   ```
 
-![image](https://github.com/JEONGSUJONG/JEONGSUJONG/assets/142254876/80efc9df-4e15-4779-8a70-35d2c29321d0)
+<!-- ![image](https://github.com/JEONGSUJONG/JEONGSUJONG/assets/142254876/80efc9df-4e15-4779-8a70-35d2c29321d0) -->
 
 <br>
 

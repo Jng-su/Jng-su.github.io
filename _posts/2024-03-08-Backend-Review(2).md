@@ -5,10 +5,10 @@ author: JEONGSUJONG
 date: 2024-03-08 00:01:00 +0800
 toc: true
 pin: false
-published: false
+published: true
 categories: [backend, Node.js]
 tags: [express]
-image: https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/63a46f26-e1ae-489a-a5ce-154f4d4aa987
+# image: https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/63a46f26-e1ae-489a-a5ce-154f4d4aa987
 ---
 
 <br>
@@ -74,7 +74,7 @@ image: https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/63a46f26-
 
 #### REST - Resource(자원)
 
-![image](https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/f41eedf0-186b-457e-994e-e7991e3b66d8){: width=100% height=100% .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/f41eedf0-186b-457e-994e-e7991e3b66d8){: width=100% height=100% .normal} -->
 
 <br>
 
@@ -216,7 +216,7 @@ const token = jwt.sign(tokenPayload , "helloworld", {expiresIn: "1h"});
 
 - Client와 Server 사이에 위치해 요청을 보낼 때 항상 Middleware를 통과한다.
 
-![image](https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/ca2c364f-0005-4b60-85dc-d1c781cab604)
+<!-- ![image](https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/ca2c364f-0005-4b60-85dc-d1c781cab604) -->
 
 - 중간에 필요한 공통적인 기능을 쉽게 넣을 수 있다.
 - 보안상으로 클라이언트와 서버간의 통신을 중간에서 감시하고 조작하는 보안적인 장치를 둘 수 있다.
