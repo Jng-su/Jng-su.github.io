@@ -5,10 +5,10 @@ author: JEONGSUJONG
 date: 2024-02-18 01:00:00 +0800
 toc: true
 pin: false
-published: false
+published: true
 categories: [project, ShoppingMall]
 tags: [project, react, node.js]
-image: https://github.com/JEONGSUJONG/readme-main/assets/142254876/60a1ef16-879c-4678-b610-29b7e6bd05ba
+# image: https://github.com/JEONGSUJONG/readme-main/assets/142254876/60a1ef16-879c-4678-b610-29b7e6bd05ba
 ---
 
 <br>
@@ -188,7 +188,7 @@ state = {
 };
 ```
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/3e22950e-0f22-4e5d-8a50-4ae17459719a){: width=100% height=100%}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/3e22950e-0f22-4e5d-8a50-4ae17459719a){: width=100% height=100%} -->
 
 <br>
 
@@ -222,7 +222,7 @@ state = {
 
 <br>
 
-![GIF](https://github.com/JEONGSUJONG/readme-main/assets/142254876/1f995892-6060-43c0-9ea1-08cb38de30b4)
+<!-- ![GIF](https://github.com/JEONGSUJONG/readme-main/assets/142254876/1f995892-6060-43c0-9ea1-08cb38de30b4) -->
 
 <br>
 
@@ -345,7 +345,7 @@ store.subscribe(render);
 
 - Locking , 충돌 보고 , 비동기 API 통신 , 라우팅 등을 위해 Redux Middleware을 사용한다.
 
-![GIF](https://github.com/JEONGSUJONG/readme-main/assets/142254876/12f15958-e789-4341-9ffb-8b9f40e2169b)
+<!-- ![GIF](https://github.com/JEONGSUJONG/readme-main/assets/142254876/12f15958-e789-4341-9ffb-8b9f40e2169b) -->
 
 <br>
 
@@ -415,7 +415,7 @@ store.dispatch({
 console.log('store.getState', store.getState());
 ```
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/dece5816-21c5-4177-a860-357f31cec7cc){: width=100% height=100% .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/dece5816-21c5-4177-a860-357f31cec7cc){: width=100% height=100% .normal} -->
 
 - 결과를 보기 위해 `dispatch` 메서드를 사용하여 특정 액션을 발생시켰다.
 - `getState` 메서드를 사용하여 스토어의 현재 상태를 확인할 수 있다.
@@ -462,7 +462,7 @@ const render = () =>
 const counter = useSelector((state) => state.counter)
 ```
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/46af7bbb-f497-430b-8b91-5849a132f076){: width=100% height=100% .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/46af7bbb-f497-430b-8b91-5849a132f076){: width=100% height=100% .normal} -->
 
 - Type 에러가 발생한다.
 
@@ -507,7 +507,7 @@ const counter = useSelector((state: RootState) => state.counter);
 
 - 로깅 , 충돌 보고 , 비동기 API 통신 , 라우팅 등을 위해 Redux Middleware을 사용한다.
 
-![GIF](https://github.com/JEONGSUJONG/readme-main/assets/142254876/12f15958-e789-4341-9ffb-8b9f40e2169b)
+<!-- ![GIF](https://github.com/JEONGSUJONG/readme-main/assets/142254876/12f15958-e789-4341-9ffb-8b9f40e2169b) -->
 
 <br>
 
@@ -527,4 +527,4 @@ const store = createStore(rootReducers, middleware);
 - `action` : 현재 처리 중인 액션
 - `applyMiddleware` : 미들웨어를 Redux 스토어에 적용하는 함수
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/25ca5619-4409-4b26-946f-d4f417840b25){: width=100% height=100% .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/25ca5619-4409-4b26-946f-d4f417840b25){: width=100% height=100% .normal} -->

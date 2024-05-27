@@ -5,10 +5,10 @@ author: JEONGSUJONG
 date: 2024-01-22 00:00:00 +0800
 toc: true
 pin: false
-published: false
+published: true
 categories: [lecture, ReactJS로 영화 웹 만들기]
 tags: [react]
-image: https://github.com/JEONGSUJONG/Readme_main/assets/142254876/7dd6d929-f416-492a-b255-f17f99c5b5a7
+# image: https://github.com/JEONGSUJONG/Readme_main/assets/142254876/7dd6d929-f416-492a-b255-f17f99c5b5a7
 ---
 
 <br>
@@ -187,7 +187,7 @@ function App() {
 }
 ```
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/5df470c7-e80c-442e-94cc-304bfa6530c9){: width=100% height=100% .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/5df470c7-e80c-442e-94cc-304bfa6530c9){: width=100% height=100% .normal} -->
 
 
 <br>
@@ -218,7 +218,7 @@ function App() {
   );
 }
 ```
-![gif](https://github.com/JEONGSUJONG/readme-main/assets/142254876/79edf51d-bb1e-456b-af96-d19414db4098){: width=100% height=100% .normal}
+<!-- ![gif](https://github.com/JEONGSUJONG/readme-main/assets/142254876/79edf51d-bb1e-456b-af96-d19414db4098){: width=100% height=100% .normal} -->
 
 - 이와 같이 Click Me! 를 클릭하면 App 함수가 계속 호출되는 것을 볼 수 있다.
     - 즉, API 호출한 컴포넌트일 경우 불필요한 API 호출을 계속 하게된다.
@@ -237,7 +237,7 @@ function App() {
   );
 }
 ```
-![gif](https://github.com/JEONGSUJONG/readme-main/assets/142254876/ffbb5a4e-6192-4673-8e22-897ab0b2a6d6){: width=100% height=100% .normal}
+<!-- ![gif](https://github.com/JEONGSUJONG/readme-main/assets/142254876/ffbb5a4e-6192-4673-8e22-897ab0b2a6d6){: width=100% height=100% .normal} -->
 
 - `useEffect` 를 사용하지 않은 것은 state가 변경될 때마다 계속 실행되고 `useEffect` 를 사용한 것은 단 한번만 실행됨을 확인 할 수 있다.
 
@@ -261,7 +261,7 @@ useEffect(() => {
 }, [counter]);
 ```
 
-![gif](https://github.com/JEONGSUJONG/readme-main/assets/142254876/ad5c173a-9d2d-4220-b943-df5d8d3495e6){: width=100% height=100% .normal}
+<!-- ![gif](https://github.com/JEONGSUJONG/readme-main/assets/142254876/ad5c173a-9d2d-4220-b943-df5d8d3495e6){: width=100% height=100% .normal} -->
 
 - `API` : `[]` 는 빈 배열이므로 React 가 변화를 감지하지 않는다.
 - `keyword` : `[keyword]` 는 keyword를 감지하게 되는데 조건이 있으니 true 일 경우 useEffect가 실행됨을 볼 수 있다.

@@ -5,10 +5,10 @@ author: JEONGSUJONG
 date: 2024-01-17 00:00:00 +0800
 toc: true
 pin: false
-published: false
+published: true
 categories: [lecture, ReactJS로 영화 웹 만들기]
 tags: [react]
-image: https://github.com/JEONGSUJONG/Readme_main/assets/142254876/7dd6d929-f416-492a-b255-f17f99c5b5a7
+# image: https://github.com/JEONGSUJONG/Readme_main/assets/142254876/7dd6d929-f416-492a-b255-f17f99c5b5a7
 ---
 
 <br>
@@ -62,7 +62,7 @@ function onChange(event) {
 
 - `disabled` : 기본적으로 `true` 이고 input를 작성할 수 없다.
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/4b3502fb-e563-45fc-8fc1-1004e73564ae){: width="400" height="250" .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/4b3502fb-e563-45fc-8fc1-1004e73564ae){: width="400" height="250" .normal} -->
 
 <br>
 
@@ -80,7 +80,7 @@ const onFlip = () => setFlipped((current) => !current);
 <button onClick={onFlip}>Flip</button>
 ```
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/caa57b57-d217-4340-bc91-76da3c956964){: width=100% height=100% .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/caa57b57-d217-4340-bc91-76da3c956964){: width=100% height=100% .normal} -->
 
 <br>
 
@@ -114,7 +114,7 @@ const onFlip = () => setFlipped((current) => !current);
   - `flipped` : `true` -> `hours` / `value` : 1 -> `Minutes` / `value` : 1 \* 60 = 60 이 된다.
 - `mintues` -> `amount` : "분에서 시간으로" 바꾸면 "분"에 입력한 값이 "시간" 으로 가기 위해 변수명 변경
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/af2d1a61-76f4-4044-88a7-662ff7e1f025){: width="400" height="250" .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/af2d1a61-76f4-4044-88a7-662ff7e1f025){: width="400" height="250" .normal} -->
 
 <br>
 
@@ -142,7 +142,7 @@ function App() {
 };
 ```
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/6ccde7bf-b592-4b12-868c-b9df311951a0){: width="400" height="250" .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/6ccde7bf-b592-4b12-868c-b9df311951a0){: width="400" height="250" .normal} -->
 
 - `<option value = "0">` : `App` 함수는 `select` 컴포넌트를 이용하여 선택된(?) value 값에 해당하는 `option` 을 선택할 수 있다.
   - `select value = {index}` 는 index 이벤트를 `onChange` 로 감지하고 `setIndex` 를 통해 현재 index 값을 알 수 있다.

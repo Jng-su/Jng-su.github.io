@@ -5,10 +5,10 @@ author: JEONGSUJONG
 date: 2024-02-01 01:00:00 +0800
 toc: true
 pin: false
-published: false
+published: true
 categories: [project, ShoppingMall]
 tags: [project, react, node.js]
-image: https://github.com/JEONGSUJONG/readme-main/assets/142254876/60a1ef16-879c-4678-b610-29b7e6bd05ba
+# image: https://github.com/JEONGSUJONG/readme-main/assets/142254876/60a1ef16-879c-4678-b610-29b7e6bd05ba
 ---
 
 <br>
@@ -58,7 +58,7 @@ baseURL: import.meta.env.PROD ? "" : "http://localhost:5000/api/v1",
 
 - Client 에서 요청하는 req.body는 아래와 같다.
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/b67d156b-2550-4107-9ec1-9f15fa795dd4){: width=100% height=100% .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/b67d156b-2550-4107-9ec1-9f15fa795dd4){: width=100% height=100% .normal} -->
 
 ```javascript
 router.post("/users/register", async (req, res, next) => {
@@ -74,13 +74,13 @@ router.post("/users/register", async (req, res, next) => {
 
 - req.body 안에 존재하는 `email` `image` `name` `password` 를 받아온다.
 
-![https://github.com/JEONGSUJONG/readme-main/assets/142254876/02c49e16-d122-44e1-8a5e-00db24e9d982](https://github.com/JEONGSUJONG/readme-main/assets/142254876/02c49e16-d122-44e1-8a5e-00db24e9d982){: width=100% height=100% .normal}
+<!-- ![https://github.com/JEONGSUJONG/readme-main/assets/142254876/02c49e16-d122-44e1-8a5e-00db24e9d982](https://github.com/JEONGSUJONG/readme-main/assets/142254876/02c49e16-d122-44e1-8a5e-00db24e9d982){: width=100% height=100% .normal} -->
 
 <br>
 
 > ## Password Bcrypt
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/b09b9e6d-78b0-486e-a762-8e2150ad29de){: width=100% height=100% .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/b09b9e6d-78b0-486e-a762-8e2150ad29de){: width=100% height=100% .normal} -->
 
 - 위의 DB에서는 password가 노출되어 해커가 db를 열게되면 쉽게 user의 password을 알 수 있게된다.
 
@@ -130,4 +130,4 @@ userSchema.pre('save', async function (next) {
 const User = mongoose.model("User", userSchema);
 ```
 
-![https://github.com/JEONGSUJONG/readme-main/assets/142254876/32c6a1a9-0cc9-4956-b36d-802beda0b619](https://github.com/JEONGSUJONG/readme-main/assets/142254876/32c6a1a9-0cc9-4956-b36d-802beda0b619){: width=100% height=100% .normal}
+<!-- ![https://github.com/JEONGSUJONG/readme-main/assets/142254876/32c6a1a9-0cc9-4956-b36d-802beda0b619](https://github.com/JEONGSUJONG/readme-main/assets/142254876/32c6a1a9-0cc9-4956-b36d-802beda0b619){: width=100% height=100% .normal} -->

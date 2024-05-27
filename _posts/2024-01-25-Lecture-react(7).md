@@ -5,10 +5,10 @@ author: JEONGSUJONG
 date: 2024-01-25 00:00:00 +0800
 toc: true
 pin: false
-published: false
+published: true
 categories: [lecture, ReactJS로 영화 웹 만들기]
 tags: [react]
-image: https://github.com/JEONGSUJONG/Readme_main/assets/142254876/7dd6d929-f416-492a-b255-f17f99c5b5a7
+# image: https://github.com/JEONGSUJONG/Readme_main/assets/142254876/7dd6d929-f416-492a-b255-f17f99c5b5a7
 ---
 
 <br>

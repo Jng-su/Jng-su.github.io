@@ -5,10 +5,10 @@ author: JEONGSUJONG
 date: 2024-02-01 00:00:00 +0800
 toc: true
 pin: false
-published: false
+published: true
 categories: [project, ShoppingMall]
 tags: [project, react, node.js]
-image: https://github.com/JEONGSUJONG/readme-main/assets/142254876/60a1ef16-879c-4678-b610-29b7e6bd05ba
+# image: https://github.com/JEONGSUJONG/readme-main/assets/142254876/60a1ef16-879c-4678-b610-29b7e6bd05ba
 ---
 
 <br>
@@ -155,7 +155,7 @@ const onSubmit = ({ email, password, name }) => {
 - Axios : 브라우저, Node.js 를 위한 Promise API 를 활용하는 HTTP 비동기 통신 라이브러리.
     - 쉽게 말해 BE와 FE가 통신을 쉽게하기 위해 Ajax와 더불어 사용한다.
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/7ff9b0a3-3e77-440c-adc5-4609e1786464){: width=100% height=100% .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/7ff9b0a3-3e77-440c-adc5-4609e1786464){: width=100% height=100% .normal} -->
 
 <br>
 
@@ -355,6 +355,6 @@ const userSlice = createSlice({
 })
 ```
 
-![GIF](https://github.com/JEONGSUJONG/readme-main/assets/142254876/28294404-55ca-4604-b40f-b4bd2bdc0cdf){: width=100% height=100% .normal}
+<!-- ![GIF](https://github.com/JEONGSUJONG/readme-main/assets/142254876/28294404-55ca-4604-b40f-b4bd2bdc0cdf){: width=100% height=100% .normal} -->
 
 - 아직 BE 라우터가 설정이 되지 않아 메시지가 이상하다. 😅

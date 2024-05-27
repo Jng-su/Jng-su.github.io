@@ -5,10 +5,10 @@ author: JEONGSUJONG
 date: 2024-02-07 00:00:00 +0800
 toc: true
 pin: false
-published: false
+published: true
 categories: [project, ShoppingMall]
 tags: [project, react, node.js]
-image: https://github.com/JEONGSUJONG/readme-main/assets/142254876/60a1ef16-879c-4678-b610-29b7e6bd05ba
+# image: https://github.com/JEONGSUJONG/readme-main/assets/142254876/60a1ef16-879c-4678-b610-29b7e6bd05ba
 ---
 
 <br>
@@ -22,7 +22,7 @@ image: https://github.com/JEONGSUJONG/readme-main/assets/142254876/60a1ef16-879c
     - 만약, 요청 하나하나에 사용자의 status 와 info를 포함하면 server는 누군지는 알지만 많은 트래픽으로 성능 저하의 원인이 된다.
 
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/c10dbbd4-628c-4ba6-9d47-bff326480e2e){: width=100% height=100% .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/c10dbbd4-628c-4ba6-9d47-bff326480e2e){: width=100% height=100% .normal} -->
 
 
 - (2) Token 안에 유저의 정보를 포함하는 토큰을 생성한다.
@@ -42,7 +42,7 @@ image: https://github.com/JEONGSUJONG/readme-main/assets/142254876/60a1ef16-879c
 
 [https://jwt.io/](https://jwt.io/)
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/007bafd4-83ee-4f80-9d31-50616c53f601){: width=100% height=100% .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/007bafd4-83ee-4f80-9d31-50616c53f601){: width=100% height=100% .normal} -->
 
 - Header(red) : Token에 대한 메타 데이터 포함 (타입, 해싱 알고리즘)
 - Payload(purple) : 유저 정보(issuer), 만료 기간(expiration time), 주제(subject) 등등 ..
@@ -50,7 +50,7 @@ image: https://github.com/JEONGSUJONG/readme-main/assets/142254876/60a1ef16-879c
     - 서명은 헤더 및 페이로드 세그먼트, 서명 알고리즘, 비밀 / 공개 키를 사용하여 생성됨.
 
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/2d4ffbd9-9cf1-4618-823e-36af859ffb46){: width=100% height=100% .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/2d4ffbd9-9cf1-4618-823e-36af859ffb46){: width=100% height=100% .normal} -->
 
 
 1. Admin 유저가 보고자 할 경우 (관리자 권한 페이지)
@@ -146,7 +146,7 @@ UserRouter.post("/login", async (req, res, next) => {
 - `payload` 는 토큰에 담기는 정보를 정의하고 여기선userId가 들어가있다.
 - `JWT.sign` 메소드는 `payload` 와 Secret Key로 JWT 토큰을 생성한다.
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/373897ee-1158-4393-ac94-c5f137d2194d){: width=100% height=100% .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/373897ee-1158-4393-ac94-c5f137d2194d){: width=100% height=100% .normal} -->
 
 - return res.json({ user, accessToken }) 에서 user 데이터를 반환하면 보안적 측면에서 위험하지 않을까?
     - Client와 Server간의 통신에서 인증 정보를 주고 받을 때 일반적으로 db에 저장된 회원 객체에서 Access Token은 필요한 정보만 추출하여 따로 저장하게 된다.
@@ -211,7 +211,7 @@ let auth = async (req, res, next) => {
 module.exports = auth;
 ```
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/c983ed2a-aa0d-4a04-b92d-db6de641d2c3){: width=100% height=100% .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/c983ed2a-aa0d-4a04-b92d-db6de641d2c3){: width=100% height=100% .normal} -->
 
 - `Bearer ---.---.---` 형식의 토큰을 `" "` 로 구분하여 헤더 중 토큰 부분만 가져온다.
 - jwt decode 를 이용하여 유효한지 검사한다.

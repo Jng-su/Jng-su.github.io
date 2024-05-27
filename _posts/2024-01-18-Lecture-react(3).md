@@ -5,10 +5,10 @@ author: JEONGSUJONG
 date: 2024-01-18 00:00:00 +0800
 toc: true
 pin: false
-published: false
+published: true
 categories: [lecture, ReactJS로 영화 웹 만들기]
 tags: [react]
-image: https://github.com/JEONGSUJONG/Readme_main/assets/142254876/7dd6d929-f416-492a-b255-f17f99c5b5a7
+# image: https://github.com/JEONGSUJONG/Readme_main/assets/142254876/7dd6d929-f416-492a-b255-f17f99c5b5a7
 ---
 
 <br>
@@ -33,7 +33,7 @@ function App() {
 }
 ```
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/92149c24-2571-4c06-be56-fa4bada2931c){: width="400" height="250" .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/92149c24-2571-4c06-be56-fa4bada2931c){: width="400" height="250" .normal} -->
 
 <br>
 
@@ -77,7 +77,7 @@ function Btn({ btnName, handleBtn }) {
 }
 ```
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/bec637de-a6c4-480c-981a-d39fc6bc687e){: width="400" height="250" .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/bec637de-a6c4-480c-981a-d39fc6bc687e){: width="400" height="250" .normal} -->
 
 - `Btn` 컴포넌트는 `btnName`과 `handleBtn`이라는 두 개의 props를 받아와 버튼을 렌더링합니다.
 - 버튼 클릭 시, 전달된 `handleBtn` 함수가 실행
@@ -147,7 +147,7 @@ function App() {
 }
 ```
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/76b11fc6-b1bd-45fe-b04b-779cf74f6baf){: width="400" height="250" .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/76b11fc6-b1bd-45fe-b04b-779cf74f6baf){: width="400" height="250" .normal} -->
 
 - React는 props를 잘 못 넘겨도 확인할 수 없는 문제점이 존재
 - 이런 문제를 해결하기 위해 PropTypes 라는 모듈의 도움을 받을 수 있다.
@@ -168,7 +168,7 @@ Btn.propTypes = {
 
 - `btnName` 을 string 으로 선언하면
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/6a1a1076-faf3-4d7a-8656-2ed7283e2f00){: width=100% height=100% .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/6a1a1076-faf3-4d7a-8656-2ed7283e2f00){: width=100% height=100% .normal} -->
 
 - 에러로 알려준다..!!
 - `isRequired` 는 필수요소로 입력되어야하는 값을 명시해준다.
@@ -199,6 +199,6 @@ function Btn({ btnName = "B Btn" }) {
 }
 ```
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/5ab73251-c4d0-40a9-a48f-500bd0e0fd4f){: width=100% height=100% .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/5ab73251-c4d0-40a9-a48f-500bd0e0fd4f){: width=100% height=100% .normal} -->
 
 - 하지만, 위와 같이 `btnName` 을 명시해주면 놀랍게도 값이 없으면 명시된 값을 넣어주는 것을 확인할 수 있다...!

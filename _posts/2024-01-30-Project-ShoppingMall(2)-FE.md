@@ -5,10 +5,10 @@ author: JEONGSUJONG
 date: 2024-01-30 00:00:00 +0800
 toc: true
 pin: false
-published: false
+published: true
 categories: [project, ShoppingMall]
 tags: [project, react, node.js]
-image: https://github.com/JEONGSUJONG/readme-main/assets/142254876/60a1ef16-879c-4678-b610-29b7e6bd05ba
+# image: https://github.com/JEONGSUJONG/readme-main/assets/142254876/60a1ef16-879c-4678-b610-29b7e6bd05ba
 ---
 
 <br>
@@ -24,7 +24,7 @@ image: https://github.com/JEONGSUJONG/readme-main/assets/142254876/60a1ef16-879c
 - React는 SPA 이기 때문에 하나의 index.html 탬플릿 파일을 가지고 있다. 하나의 템플릿에 자바스크립트를 이용해서 다른 컴포넌트를 이 index.html 템플릿에 넣으므로 페이지를 변경해주게 된다.
 - 이 때 React Router DOM 라이브러리가 새 컴포넌트로 라우팅/탐색을 하고 렌더링 하는데 도움이 된다.
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/2f2e51c4-8daa-49d9-b6a4-f41d16b4d6b9)
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/2f2e51c4-8daa-49d9-b6a4-f41d16b4d6b9) -->
 
 <br>
 

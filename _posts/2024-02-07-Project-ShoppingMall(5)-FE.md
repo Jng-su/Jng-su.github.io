@@ -5,10 +5,10 @@ author: JEONGSUJONG
 date: 2024-02-07 01:00:00 +0800
 toc: true
 pin: false
-published: false
+published: true
 categories: [project, ShoppingMall]
 tags: [project, react, node.js]
-image: https://github.com/JEONGSUJONG/readme-main/assets/142254876/60a1ef16-879c-4678-b610-29b7e6bd05ba
+# image: https://github.com/JEONGSUJONG/readme-main/assets/142254876/60a1ef16-879c-4678-b610-29b7e6bd05ba
 ---
 
 <br>
@@ -30,7 +30,7 @@ useEffect(() => {
 }, [isAuth, pathname, dispatch]);
 ```
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/72e864dd-11be-460e-90e7-df732f59b71f){: width=100% height=100% .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/72e864dd-11be-460e-90e7-df732f59b71f){: width=100% height=100% .normal} -->
 
 - Redux의 `useSelector` 훅을 사용하여 Redux store에서 유저의 인증 상태인 `isAuth` 를 가져온다.
 - `useDispatch` 훅을 사용하여 Redux store에 action 을 dispatch 한다.
@@ -75,7 +75,7 @@ axiosInstance.interceptors.request.use(
 );
 ```
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/386d91c4-9e12-4223-919c-abeb0274ba9f){: width=100% height=100% .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/386d91c4-9e12-4223-919c-abeb0274ba9f){: width=100% height=100% .normal} -->
 
 - 모든 HTTP 요청에 대해 Authorization 헤더에 유효한 토큰을 추가한다.
 - 이를 통해 서버에 요청할 때마다 유저의 인증 상태를 확인할 수 있다.

@@ -5,10 +5,10 @@ author: JEONGSUJONG
 date: 2024-01-31 01:00:00 +0800
 toc: true
 pin: false
-published: false
+published: true
 categories: [project, ShoppingMall]
 tags: [project, react, node.js]
-image: https://github.com/JEONGSUJONG/readme-main/assets/142254876/60a1ef16-879c-4678-b610-29b7e6bd05ba
+# image: https://github.com/JEONGSUJONG/readme-main/assets/142254876/60a1ef16-879c-4678-b610-29b7e6bd05ba
 ---
 
 <br>
@@ -48,7 +48,7 @@ app.listen(PORT, () => {
 
 `node index.js`
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/0b28551e-13ba-41f1-bf23-9974113f74be){: width=100% height=100% .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/0b28551e-13ba-41f1-bf23-9974113f74be){: width=100% height=100% .normal} -->
 
 <br>
 
@@ -101,7 +101,7 @@ app.listen(PORT, () => {
 
 - `express.static()` : 이미지, CSS 파일 및 Javascript 파일과 같은 정적 파일을 제공하려면 Express의 express.static 내장 미들웨어 기능을 사용할 수 있다.
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/91ae5eae-806b-46c1-b35d-0a3a660cf579){: width=100% height=100% .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/91ae5eae-806b-46c1-b35d-0a3a660cf579){: width=100% height=100% .normal} -->
 
 <br>
 
@@ -114,7 +114,7 @@ const path = require("path");
 app.use(express.static(path.join(__dirname, "../public")));
 ```
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/a8029796-30c4-48e9-8eb6-3aa8b6cd800a){: width=100% height=100% .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/a8029796-30c4-48e9-8eb6-3aa8b6cd800a){: width=100% height=100% .normal} -->
 
 - `__dirname` : 현재 파일이 위치한 디렉토리를 의미
     - `path.join` 을 사용하여 정적 파일이 위치한 디렉토리 경로를 지정합니다.
@@ -147,7 +147,7 @@ app.post("/", (req, res) => {
 });
 ```
 
-![GIF](https://github.com/JEONGSUJONG/readme-main/assets/142254876/f2a43553-bea8-44ca-941c-65220e6d335e){: width=100% height=100% .normal}
+<!-- ![GIF](https://github.com/JEONGSUJONG/readme-main/assets/142254876/f2a43553-bea8-44ca-941c-65220e6d335e){: width=100% height=100% .normal} -->
 
 <br>
 
@@ -217,7 +217,7 @@ mongoose
     - .env 파일에 넣기 
         -  URL 안에 `<username>:<password>` DatabaseAccess 설정한 username과 password 넣어주기
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/e69972af-2f92-47d0-92ad-c228bdbc70db){: width=100% height=100% .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/e69972af-2f92-47d0-92ad-c228bdbc70db){: width=100% height=100% .normal} -->
 
 정상적으로 연결되었다..!
 
@@ -272,7 +272,7 @@ app.get("/", (req, res) => {
 });
 ```
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/9b311df2-bd1d-4af6-b232-9709aa981567){: width=100% height=100% .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/9b311df2-bd1d-4af6-b232-9709aa981567){: width=100% height=100% .normal} -->
 
 <br>
 
@@ -289,7 +289,7 @@ app.use((error, req, res, next) => {
 });
 ```
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/064f979b-928b-423f-bfa6-48648bd97a6c){: width=100% height=100% .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/064f979b-928b-423f-bfa6-48648bd97a6c){: width=100% height=100% .normal} -->
 
 - 위와같으면 서버가 다운 되지 않고 에러 메시지를 보여준다.
 - 하지만, 비동기 요청으로 인한 에러는 에러 처리기에서 못 받는다.
@@ -308,7 +308,7 @@ app.use((error, req, res, next) => {
 });
 ```
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/67139389-371a-4c93-9d63-1cab76a65399){: width=100% height=100% .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/67139389-371a-4c93-9d63-1cab76a65399){: width=100% height=100% .normal} -->
 
 <br>
 

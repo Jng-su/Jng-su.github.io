@@ -5,10 +5,10 @@ author: JEONGSUJONG
 date: 2024-02-23 00:00:00 +0800
 toc: true
 pin: false
-published: false
+published: true
 categories: [project, ShoppingMall]
 tags: [project, react, node.js]
-image: https://github.com/JEONGSUJONG/readme-main/assets/142254876/60a1ef16-879c-4678-b610-29b7e6bd05ba
+# image: https://github.com/JEONGSUJONG/readme-main/assets/142254876/60a1ef16-879c-4678-b610-29b7e6bd05ba
 ---
 
 <br>
@@ -71,7 +71,7 @@ const fetchProducts = async ({
 
 <br>
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/5480af84-a1bd-47ad-99cc-7cccc7cdabd0)
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/5480af84-a1bd-47ad-99cc-7cccc7cdabd0) -->
 
 - 서버에 요청을 보낸 것은 확인할 수 있지만 아직 서버의 요청을 받아줄 Route를 만들지 않았다. 🤫
 
@@ -173,6 +173,6 @@ ProductRouter.get("/", async (req, res, next) => {
 
 <br>
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/d9e45988-8c95-441b-8097-c352285b6ee6)
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/d9e45988-8c95-441b-8097-c352285b6ee6) -->
 
 - 클라이언트에서 받은 GET 요청으로 상품들이 정상적으로 나오는 것을 볼 수 있다.

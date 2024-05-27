@@ -7,7 +7,6 @@ toc: true
 pin: true
 published: false
 tags: [HelloWorld]
-image: https://github.com/JEONGSUJON9/Readme_main/assets/142254876/10148581-42f2-423b-8f05-bfe5dfb364a0
 ---
 
 > ## 😎 Header Size

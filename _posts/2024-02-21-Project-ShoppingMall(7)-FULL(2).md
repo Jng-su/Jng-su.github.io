@@ -5,10 +5,10 @@ author: JEONGSUJONG
 date: 2024-02-21 02:00:00 +0800
 toc: true
 pin: false
-published: false
+published: true
 categories: [project, ShoppingMall]
 tags: [project, react, node.js]
-image: https://github.com/JEONGSUJONG/readme-main/assets/142254876/60a1ef16-879c-4678-b610-29b7e6bd05ba
+# image: https://github.com/JEONGSUJONG/readme-main/assets/142254876/60a1ef16-879c-4678-b610-29b7e6bd05ba
 ---
 
 <br>
@@ -115,7 +115,7 @@ navigate("/");
 - components/FileUpload.jsx
 - `npm install react-dropzone`
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/02eee6d7-8800-4618-aa5b-4be0c3b93362)
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/02eee6d7-8800-4618-aa5b-4be0c3b93362) -->
 
 - UploadPage 안에 FileUpload Component를 추가하여 이미지 State를 배열형식으로 추가하여 UploadPage 에 전달해준다.
 - 그 후, Submit handler 로 Server에 넘겨주고 Server는 Upload 전체 파일 (이미지 포함)을 MongoDB에 전달해준다.
@@ -142,8 +142,8 @@ import Dropzone from "react-dropzone";
 </Dropzone>;
 ```
 
-![GIF](https://github.com/JEONGSUJONG/readme-main/assets/142254876/37bebc28-e867-4674-b90f-841c77f5d3cc){: width=100% height=100% .normal}
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/753f8352-c252-454e-9236-5bcefa63531d){: width=100% height=100% .normal}
+<!-- ![GIF](https://github.com/JEONGSUJONG/readme-main/assets/142254876/37bebc28-e867-4674-b90f-841c77f5d3cc){: width=100% height=100% .normal}
+![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/753f8352-c252-454e-9236-5bcefa63531d){: width=100% height=100% .normal} -->
 
 - React Dropzone을 사용해서 이미지를 업로드하는 방법이다. Drag and drop 혹은 GIF 파일처럼 폴더에서 첨부도 가능하다.
 - 밑의 사진의 경우 Array[0]에 File이 들어가 있는 것을 확인할 수 있다.
@@ -273,7 +273,7 @@ ProductRouter.post("/", auth, async (req, res, next) => {
 });
 ```
 
-![GIF](https://github.com/JEONGSUJONG/readme-main/assets/142254876/e14d1469-196f-46f7-9ac0-9b7ce4fe36f0){: width=100% height=100% .w-50 .normal}
+<!-- ![GIF](https://github.com/JEONGSUJONG/readme-main/assets/142254876/e14d1469-196f-46f7-9ac0-9b7ce4fe36f0){: width=100% height=100% .w-50 .normal} -->
 
 <br>
 
@@ -287,8 +287,8 @@ const productSchema = mongoose.Schema({
   },
 ```
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/a059986c-ae7a-4cde-af56-fef65048c8a7){: width=100% height=100% .normal}
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/b046d159-f7f8-48a1-80af-c0f1c2aae6a7){: width=100% height=100% .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/a059986c-ae7a-4cde-af56-fef65048c8a7){: width=100% height=100% .normal}
+![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/b046d159-f7f8-48a1-80af-c0f1c2aae6a7){: width=100% height=100% .normal} -->
 
 - `writerId` 값과 `userId` 값이 일치함을 볼 수 있다. 👍
 - `continents` 값은 Front에서 설정한 값과 일치하구나 🤔
@@ -309,7 +309,7 @@ const continents = [
 
 ### 🧷 Multer
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/b6556dc3-361e-44b7-8839-3a4b12a8f2a4)
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/b6556dc3-361e-44b7-8839-3a4b12a8f2a4) -->
 
 - `Upload` 폴더 안에 이미지를 업로드 해줄 예정 🥱
 

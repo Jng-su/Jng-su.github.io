@@ -1,14 +1,13 @@
 ---
-# 👨‍💻 (project) 📌 (fixed) 📖 (What to Learn) 🧷 (Anything) 🌱 (Link)
-title: 📌 Commit Message Convention
+title: Commit Message Convention
 author: JEONGSUJONG
 date: 2024-01-22 00:00:00 +0800
 toc: true
 pin: true
-published: false
+published: true
 categories: [project, github]
 tags: [github]
-image: https://github.com/JEONGSUJONG/readme-main/assets/142254876/be20d816-7e67-4b9f-af6e-816b7e524d42
+# image: https://github.com/JEONGSUJONG/readme-main/assets/142254876/be20d816-7e67-4b9f-af6e-816b7e524d42
 ---
 
 <br>

@@ -5,10 +5,10 @@ author: JEONGSUJONG
 date: 2024-01-31 00:00:00 +0800
 toc: true
 pin: false
-published: false
+published: true
 categories: [project, ShoppingMall]
 tags: [project, react, node.js]
-image: https://github.com/JEONGSUJONG/readme-main/assets/142254876/60a1ef16-879c-4678-b610-29b7e6bd05ba
+# image: https://github.com/JEONGSUJONG/readme-main/assets/142254876/60a1ef16-879c-4678-b610-29b7e6bd05ba
 ---
 
 <br>
@@ -228,7 +228,7 @@ export const persistor = persistStore(store);
 
 - `persistStore` : Redux store의 상태를 지속시키기 위한 `persistor`를 생성한다.
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/e702770c-dc83-4ec0-945e-6d146491d95c){: width=100% height=100% .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/e702770c-dc83-4ec0-945e-6d146491d95c){: width=100% height=100% .normal} -->
 - 참고 : [https://chromewebstore.google.com/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=ko](https://chromewebstore.google.com/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=ko)
 
 <br>

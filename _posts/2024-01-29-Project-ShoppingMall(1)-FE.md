@@ -5,10 +5,10 @@ author: JEONGSUJONG
 date: 2024-01-29 00:00:00 +0800
 toc: true
 pin: false
-published: false
+published: true
 categories: [project, ShoppingMall]
 tags: [project, react, node.js]
-image: https://github.com/JEONGSUJONG/readme-main/assets/142254876/60a1ef16-879c-4678-b610-29b7e6bd05ba
+# image: https://github.com/JEONGSUJONG/readme-main/assets/142254876/60a1ef16-879c-4678-b610-29b7e6bd05ba
 ---
 
 <br>
@@ -97,7 +97,7 @@ image: https://github.com/JEONGSUJONG/readme-main/assets/142254876/60a1ef16-879c
     - class 혹은 id 명을 작성하기 위한 고생을 하지 않아도된다.
     - Utilty Class가 익숙해지는 시간이 필요할 수 있지만 IntelliSense 플러그인이 제공돼서 금방 익숙해진다.
 
-![gif](https://github.com/JEONGSUJONG/readme-main/assets/142254876/c379482f-b15d-4b12-a98d-16b5ffd8fcce){: width=100% height=100% .normal}
+<!-- ![gif](https://github.com/JEONGSUJONG/readme-main/assets/142254876/c379482f-b15d-4b12-a98d-16b5ffd8fcce){: width=100% height=100% .normal} -->
 
 <br>
 
@@ -146,4 +146,4 @@ function App() {
 export default App;
 ```
 
-![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/fd7b4e4c-4c22-421a-af86-1b02db5ae967){: width=100% height=100% .normal}
+<!-- ![image](https://github.com/JEONGSUJONG/readme-main/assets/142254876/fd7b4e4c-4c22-421a-af86-1b02db5ae967){: width=100% height=100% .normal} -->
