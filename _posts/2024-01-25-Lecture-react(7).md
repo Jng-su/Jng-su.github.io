@@ -8,7 +8,7 @@ pin: false
 published: true
 categories: [lecture, ReactJS로 영화 웹 만들기]
 tags: [react]
-# image: https://github.com/JEONGSUJONG/Readme_main/assets/142254876/7dd6d929-f416-492a-b255-f17f99c5b5a7
+image: https://github.com/JEONGSUJONG/JEONGSUJONG/assets/168960634/a7d1fbfa-583b-40c9-b3be-1fc0e42ba1e0
 ---
 
 <br>

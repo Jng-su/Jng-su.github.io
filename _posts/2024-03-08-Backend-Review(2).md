@@ -8,7 +8,7 @@ pin: false
 published: true
 categories: [backend, Node.js]
 tags: [express]
-# image: https://github.com/JEONGSUJONG/github-mainpage/assets/142254876/63a46f26-e1ae-489a-a5ce-154f4d4aa987
+image: https://github.com/JEONGSUJONG/JEONGSUJONG/assets/168960634/580ff546-c5d4-4502-a0c3-489b13a49870
 ---
 
 <br>
