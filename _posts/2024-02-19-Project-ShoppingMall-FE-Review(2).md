@@ -6,7 +6,7 @@ date: 2024-02-19 01:00:00 +0800
 toc: true
 pin: false
 published: true
-categories: [project, ShoppingMall]
+categories: [personal-project, barrel]
 tags: [project, react, node.js]
 # image: https://github.com/JEONGSUJONG/readme-main/assets/142254876/60a1ef16-879c-4678-b610-29b7e6bd05ba
 ---

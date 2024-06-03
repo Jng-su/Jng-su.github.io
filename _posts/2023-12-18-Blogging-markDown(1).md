@@ -1,5 +1,4 @@
 ---
-# 👨‍💻 (project) 📌 (fixed) 📖 (What to Learn) 🧷 (Anything) 🌱 (Link)
 title: 📌 MarkDown 기본 사용법
 author: JEONGSUJONG
 date: 2023-12-18 00:00:00 +0800
