@@ -5,7 +5,7 @@ author: JEONGSUJONG
 date: 2024-01-23 00:00:00 +0800
 toc: true
 pin: false
-published: true
+published: false
 categories: [personal-project, ott]
 tags: [react]
 image: https://github.com/JEONGSUJONG/JEONGSUJONG/assets/168960634/a7d1fbfa-583b-40c9-b3be-1fc0e42ba1e0

@@ -4,7 +4,7 @@ author: JEONGSUJONG
 date: 2024-01-22 00:00:00 +0800
 toc: true
 pin: true
-published: true
+published: false
 categories: [team-project, github]
 tags: [github]
 image: https://github.com/JEONGSUJONG/JEONGSUJONG/assets/168960634/9493772d-5a56-497b-90a3-87a8c7cfe761
