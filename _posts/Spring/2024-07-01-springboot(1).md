@@ -1,11 +1,11 @@
 ---
-title: 🍃 Spring [1]
+title: 🍃 Spring-boot - Init Project [1]
 date: 2024-07-19 00:00:00 +0800
 toc: true
 pin: false
 published: true
-categories: [SERVER, SPRING]
-tags: [java, spring]
+categories: [SERVER, SPRINGBOOT]
+tags: [java, springboot]
 image: https://github.com/user-attachments/assets/a2dc1a88-2c9b-4d86-92da-1f37f30378f9
 ---
 
@@ -247,3 +247,68 @@ public class HelloController {
 
 
 참고 : IntelliJ에서 get, set 자동완성은 `alt + insert` 누른 뒤 `Getter and Setter` 누르면 됨
+
+
+<br>
+
+```java
+package helloGroup.hello_spring.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+public class HelloController {
+
+    @GetMapping("hello")
+    public String hello(Model model){
+        model.addAttribute("data", "hello spring");
+        return "hello";
+    }
+
+    @GetMapping("hello-mvc")
+    public String helloMvc(@RequestParam("name") String name, Model model){
+        model.addAttribute("name", name);
+        return "hello-template";
+    }
+
+    @GetMapping("hello-string")
+    @ResponseBody
+    public String helloString(@RequestParam("name") String name) {
+        return "hello " + name;
+    }
+
+    @GetMapping("/hello-api")
+    @ResponseBody
+    public HelloResponse helloApi(@RequestParam("name") String name, @RequestParam("age") int age) {
+        HelloResponse response = new HelloResponse();
+        response.setName(name);
+        response.setAge(age);
+        return response;
+    }
+
+    static class HelloResponse {
+        private String name;
+        private int age;
+
+        //
+        public String getName() {
+            return name;
+        }
+        public int getAge() {
+            return age;
+        }
+
+        //
+        public void setName(String name) {
+            this.name = name;
+        }
+        public void setAge(int age) {
+            this.age = age;
+        }
+    }
+}
+```
