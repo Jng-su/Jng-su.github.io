@@ -56,6 +56,12 @@ IntelliJ 실행 후 localhost:8080 접속
 
 <br>
 
+만약에 clone 후 다른 로컬에서 서버에서 띄우고 싶다면 `gradle build` 후 실행
+
+gradle 없으면 다운로드해야함
+
+<br>
+
 > ## View Setting
 
 ### 📟 `src/main/resources/static/hello-static.html`
