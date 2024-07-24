@@ -1,7 +1,3 @@
-/*
- * The syntax light mode typography colors
- */
-
 @mixin light-scheme {
   /* Framework color */
   --main-bg: white;
@@ -98,15 +94,16 @@
 
   .dark {
     display: none;
+    & {
+      --categories-border: rgba(0, 0, 0, 0.125);
+      --categories-hover-bg: var(--btn-border-color);
+      --categories-icon-hover-color: darkslategray;
+    }
   }
 
-  /* Categories */
-  --categories-border: rgba(0, 0, 0, 0.125);
-  --categories-hover-bg: var(--btn-border-color);
-  --categories-icon-hover-color: darkslategray;
-
-  /* Archive */
-  --timeline-color: rgba(0, 0, 0, 0.075);
-  --timeline-node-bg: #c2c6cc;
-  --timeline-year-dot-color: #ffffff;
-} /* light-scheme */
+  & {
+    --timeline-color: rgba(0, 0, 0, 0.075);
+    --timeline-node-bg: #c2c6cc;
+    --timeline-year-dot-color: #ffffff;
+  }
+}
