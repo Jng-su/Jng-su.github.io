@@ -1,5 +1,5 @@
 ---
-title: 🍃 Spring-boot - Init Project [1]
+title: 🍃 SpringBoot - Init Project
 date: 2024-07-19 00:00:00 +0800
 toc: true
 pin: false
