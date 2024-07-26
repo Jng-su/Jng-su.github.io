@@ -5,7 +5,7 @@ toc: true
 pin: false
 published: true
 categories: [SERVER, SPRINGBOOT]
-tags: [java, springboot]
+tags: [springboot]
 image: https://github.com/user-attachments/assets/a2dc1a88-2c9b-4d86-92da-1f37f30378f9
 ---
 

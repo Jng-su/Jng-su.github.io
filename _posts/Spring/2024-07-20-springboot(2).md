@@ -5,7 +5,7 @@ toc: true
 pin: false
 published: true
 categories: [SERVER, SPRINGBOOT]
-tags: [java, springboot]
+tags: [springboot]
 image: https://github.com/user-attachments/assets/a2dc1a88-2c9b-4d86-92da-1f37f30378f9
 ---
 
@@ -309,7 +309,170 @@ public class MemoryMemberRepositoryTest {
 
 ### 회원 서비스 개발
 
+서비스는 레포지토리와 도메인을 활용하여 실제 비즈니스 로직을 처리함
+
+<br>
+
+회원 서비스를 제작하기 위해 사용될 기능은 회원가입, 모든 회원 불러오기, 한 회원 불러오기
+우선 Sevice Package를 생성하고 MemberService 클래스를 생성
+
+
+#### 📟 `service/MemberService.java`
+
+```java
+    // 회원 서비스 자체가 회원 레포지토리를 활용
+    private final MemberRepository memberRepository = new MemoryMemberRepository();
+
+    public Long join(Member member) {
+        validateDuplicateMember(member);
+        memberRepository.save(member);
+        return member.getId();
+    }
+    
+    private void validateDuplicateMember(Member member) {
+        memberRepository.findByName(member.getName())
+                        .ifPresent(m -> {
+                            throw new IllegalStateException("이미 존재하는 회원입니다.");
+                        });
+    }
+
+    public List<Member> findMembers() {
+        return memberRepository.findAll();
+    }
+
+    public Optional<Member> findOne(Long memberId) {
+        return memberRepository.findById(memberId);
+    }
+```
+
+- `validateDuplicateMember()`는 method로 따로 관리하는 게 좋기에 `ctrl + t` 로 분리하고 Extract Method를 선택
+- `ifPresent()`는 실제 값이 존재하면 실행되는 데 이는 `Optional`이기에 가능함
+
+<br>
+
 ### 회원 서비스 테스트
 
+이제 작성한 회원 서비스를 테스트를 해야함.
 
-뭔가 Spring은 다른 프레임워크에 비해 계층 구조를 명확히 해야한 거 같고 정확히 이해해야 로직 흐름을 알 수 있을 듯 싶다 😰 아직까진 어렵네..
+`command + shift + t`로 테스트를 자동완성 시키고 Junit5를 사용
+
+![image](https://github.com/user-attachments/assets/3a5ac0e3-a641-4c65-9058-f75d60178bb3){: .normal}
+
+<br>
+
+![image](https://github.com/user-attachments/assets/af4e4ef4-a3fc-409b-a244-c5b0713be9f0){: .normal}
+
+보이는 것 처럼 본인은 맥북을 사용함. 구매한지 얼마 안됨. 💻 
+
+무튼, 테스트하고자 하는 Method를 지정하고 OK로 생성
+
+<br>
+
+#### 📟 `test/../service/MemberServiceTest.java`
+
+```java
+package helloGroup.hello_spring.service;
+
+import helloGroup.hello_spring.domain.Member;
+import helloGroup.hello_spring.repository.MemoryMemberRepository;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.*;
+
+class MemberServiceTest {
+
+    MemberService memberService;
+    MemoryMemberRepository memberRepository;
+
+    @BeforeEach
+    public void beforeEach() {
+        memberRepository = new MemoryMemberRepository();
+        memberService = new MemberService(memberRepository);
+    }
+
+    @AfterEach
+    public void afterEach() {
+        memberRepository.clearStore();
+    }
+
+    @Test
+    void join() {
+        // given
+        Member member = new Member();
+        member.setName("spiderman");
+
+        // when
+        Long saveId = memberService.join(member);
+
+        // then
+        Member findMember = memberService.findOne(saveId).get();
+        assertThat(member.getName()).isEqualTo(findMember.getName());
+    }
+
+    @Test
+    public void ExceptDuplicatedMember() {
+        // given
+        Member member1 = new Member();
+        member1.setName("dr.strange");
+
+        Member member2 = new Member();
+        member2.setName("dr.strange");
+
+        // when
+        memberService.join(member1);
+                IllegalStateException e = assertThrows(
+                IllegalStateException.class, 
+                () -> memberService.join(member2)
+        );
+        assertThat(e.getMessage()).isEqualTo("이미 존재하는 회원입니다.");
+
+        // then
+    }
+
+    @Test
+    void findMembers() {
+    }
+
+    @Test
+    void findOne() {
+    }
+}
+```
+
+<br>
+
+#### Dependency Injection
+
+1. MemoryService 클래스에서 new 키워드를 사용하여 MemoryMemberRepository의 인스턴스를 생성
+    ```java
+    MemoryMemberRepository memberRepository = new MemoryMemberRepository();
+    ```
+    이렇게 하면 MemoryService 클래스가 항상 새로운 MemoryMemberRepository 인스턴스를 사용
+    
+
+2. MemoryServiceTest 클래스에서는 MemberService의 인스턴스를 생성할 때, MemoryMemberRepository 인스턴스를 생성자 주입 방식으로 전달
+    ```java
+    private final MemberRepository memberRepository;
+
+    public MemberService(MemberRepository memberRepository) {
+    this.memberRepository = memberRepository;
+    }
+    ```
+    MemberService 클래스는 의존성을 외부에서 주입
+
+
+3.  테스트 코드에서는 @BeforeEach 애노테이션을 사용하여 매 테스트 전에 MemoryMemberRepository와 MemberService 인스턴스를 생성하고 연결
+    ```java
+    MemberService memberService;
+    MemoryMemberRepository memberRepository;
+
+    @BeforeEach
+    public void beforeEach() {
+        memberRepository = new MemoryMemberRepository();
+        memberService = new MemberService(memberRepository);
+    }
+    ```
+    이렇게 하면 각 테스트마다 새로운 MemoryMemberRepository와 MemberService 인스턴스가 생성되고, MemberService는 생성된 MemoryMemberRepository 인스턴스를 사용
