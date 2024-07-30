@@ -3,7 +3,7 @@ title: 🍃 SpringBoot - Init Project
 date: 2024-07-19 00:00:00 +0800
 toc: true
 pin: false
-published: true
+published: false
 categories: [SERVER, SPRINGBOOT]
 tags: [springboot]
 image: https://github.com/user-attachments/assets/a2dc1a88-2c9b-4d86-92da-1f37f30378f9
