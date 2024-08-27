@@ -138,6 +138,10 @@ public class RootController {
 </html>
 ```
 
+<br>
+
+> ## Member API
+
 - 회원가입, 로그인, 회원리스트
 
 ### 🖥️ `controller/MemberController.java`
@@ -203,3 +207,133 @@ public class MemberController {
   - `@RequestMapping` : 템플릿의 URL 제작
   - `@RequiredArgsConstructor` : 객체 생성자 주입을 위한
     - 생성자 왜?  클래스의 의존성을 명확히 하고, 객체의 일관성을 유지하기 위함.
+
+### 🖥️ `service/MemberService.java`
+
+```java
+package com.example.foo.service;
+
+import com.example.foo.dto.MemberDto;
+import com.example.foo.entity.MemberEntity;
+import com.example.foo.repository.MemberRepository;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+
+import java.lang.reflect.Member;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
+@Service
+@RequiredArgsConstructor
+public class MemberService {
+    private final MemberRepository memberRepository;
+
+    public void save(MemberDto memberDto) {
+        MemberEntity memberEntity = MemberEntity.toMemberEntity(memberDto);
+        memberRepository.save(memberEntity);
+    }
+
+    public MemberDto login(MemberDto memberDto) {
+        // 1. 회원이 입력한 이메일이 DB에 존재하는 지 판단
+        // 2. DB 에서 조회한 사용자의 비밀번호와 입력한 비밀번호을 비교
+        Optional<MemberEntity> byMemberEmail = memberRepository.findByMemberEmail(memberDto.getMemberEmail());
+
+        if (byMemberEmail.isPresent()) {
+            // 이메일을 갖고 있는 회원 정보가 있음 && 비밀번호 확인 x
+            MemberEntity memberEntity = byMemberEmail.get();
+            if (memberEntity.getMemberPassword().equals(memberDto.getMemberPassword())) {
+                // 비밀번호 일치, Entity 객체를 Dto 로 변환
+                return MemberDto.toMemberDto(memberEntity);
+            } else {
+                // 비밀번호 불일치
+                return null;
+            }
+        } else {
+            // 이메일을 갖고 없는 회원 정보가 없음
+            return null;
+        }
+    }
+
+    public List<MemberDto> findAllMembers() {
+        List<MemberEntity> memberEntityList = memberRepository.findAll();
+        List<MemberDto> memberDtoList = new ArrayList<>();
+        for (MemberEntity memberEntity : memberEntityList) {
+            memberDtoList.add(MemberDto.toMemberDto(memberEntity));
+        }
+        return memberDtoList;
+    }
+
+    public MemberDto findById(Long id) {
+        Optional<MemberEntity> optionalMemberEntity = memberRepository.findById(id);
+        if (optionalMemberEntity.isPresent()) {
+            return MemberDto.toMemberDto(optionalMemberEntity.get());
+        } else {
+            return null;
+        }
+    }
+
+    public MemberDto updateForm(String memberEmail) {
+        Optional<MemberEntity> optionalMemberEntity = memberRepository.findByMemberEmail(memberEmail);
+        if (optionalMemberEntity.isPresent()) {
+            return MemberDto.toMemberDto(optionalMemberEntity.get());
+        } else {
+            return null;
+        }
+    }
+
+    public void update(MemberDto memberDto) {
+        // updateForm 은 id 를 포함하지 않고 update 는 id를 포함한다.
+        memberRepository.save(MemberEntity.toUpdateMemberEntity(memberDto));
+        // save 는 id 가 없으면 query 에 insert 있으면 update 해줌
+    }
+
+    public void delete(Long id) {
+        memberRepository.deleteById(id);
+    }
+}
+```
+
+<br>
+
+> ## entity vs dto
+
+앞선 member api에서 `toMemberDto`와 `toMemberEntity`를 설명하겠음
+
+```java
+    public static MemberDto toMemberDto(MemberEntity memberEntity) {
+        MemberDto memberDto = new MemberDto();
+        memberDto.setId(memberEntity.getId());
+        memberDto.setMemberEmail(memberEntity.getMemberEmail());
+        memberDto.setMemberName(memberEntity.getMemberName());
+        memberDto.setMemberPassword(memberEntity.getMemberPassword());
+        return memberDto;
+    }
+```
+
+```java
+    public static MemberEntity toMemberEntity(MemberDto memberDto) {
+        MemberEntity memberEntity = new MemberEntity();
+        memberEntity.setMemberEmail(memberDto.getMemberEmail());
+        memberEntity.setMemberName(memberDto.getMemberName());
+        memberEntity.setMemberPassword(memberDto.getMemberPassword());
+        return memberEntity;
+    }
+
+    public static MemberEntity toUpdateMemberEntity(MemberDto memberDto) {
+        MemberEntity memberEntity = new MemberEntity();
+        memberEntity.setId(memberDto.getId());
+        memberEntity.setMemberEmail(memberDto.getMemberEmail());
+        memberEntity.setMemberName(memberDto.getMemberName());
+        memberEntity.setMemberPassword(memberDto.getMemberPassword());
+        return memberEntity;
+    }
+```
+
+- Entity : 테이블과 연결되는 Entity 클래스가 변경되면 DB의 일관성을 해칠 수 있음.
+- Dto : 클라이언트와 Request/Response 하는 Dto 클래스는 유동적으로 변경되므로 Entity와 분리가 필요함.
+
+Entity에서는 `@setter`를 지양하는 반면 Dto에서는 `@getter`와 `@setter`가 사용됨으로 차이점을 이해할 수 있음.
+Entity에서 `@setter`가 사용되면 변경되지 않는 인스턴스에서도 접근 가능해지기에 객체의 일관성 및 안정성을 보장할 수 없음.
+
+![dtoentity](https://github.com/user-attachments/assets/e52a08c2-1666-4cf1-8f8e-af8f09c02417)

@@ -4,7 +4,7 @@ date: 2024-07-01 00:00:00 +0800
 toc: true
 pin: false
 published: true
-categories: [CLIENT, REACT]
+categories: [CLIENT, REACT-QUERY]
 tags: [react]
 image: https://github.com/user-attachments/assets/5c630267-1c97-47e8-93c7-03b0234c3b6e
 ---
