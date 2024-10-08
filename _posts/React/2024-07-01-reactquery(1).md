@@ -1,5 +1,5 @@
 ---
-title: 🔯 React - Query [1]
+title: 🔯 React | Query [1]
 date: 2024-07-01 00:00:00 +0800
 toc: true
 pin: false

@@ -1,5 +1,5 @@
 ---
-title: 📱 React - Native [1]
+title: 📱 React | Native [1]
 date: 2024-07-03 00:00:00 +0800
 toc: true
 pin: false

@@ -1,5 +1,5 @@
 ---
-title: 🍃 SpringBoot [1]
+title: 🍃 SpringBoot | Getting started
 date: 2024-08-01 00:00:00 +0800
 toc: true
 pin: false
