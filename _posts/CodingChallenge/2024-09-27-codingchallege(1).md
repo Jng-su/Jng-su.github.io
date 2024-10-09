@@ -4,7 +4,7 @@ date: 2024-09-27 00:00:00 +0800
 toc: true
 pin: false
 published: true
-categories: [ONLINEJUDGE]
+categories: [ONLINEJUDGE, BOJ1181]
 tags: [coding]
 image: https://github.com/user-attachments/assets/dfeebf23-3816-44af-8fb2-f87a845ede8e
 
